@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- favicon -->
+            <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+            <!-- google fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+            <!-- daisy ui -->
+            <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+            <!-- tailwind css -->
+            <script src="https://cdn.tailwindcss.com"></script>
+            <!-- custom font style -->
+            <style> .font-lexend { font-family: 'Lexend', sans-serif; } </style>
+            <!-- custom style -->
+            <script>
+                        tailwind.config = {
+                                    theme: {
+                                                extend: {
+                                                            colors: {
+                                                                        primarycolor: '#B4F461',
+                                                            }
+                                                }
+                                    }
+                        }
+            </script>
+            <title>Donate Bangladesh</title>
+</head>
+
+<body class="font-lexend">
+            <header class="bg-[#F9F7F3] fixed z-[1000] w-full">
+                        <nav class="container mx-auto py-3 px-3 md:px-0">
+                                    <div class="flex justify-center md:justify-between items-center gap-4">
+                                                <a href="index.html"> <button class="btn bg-primarycolor">Home</button> </a>
+                                                <a href="index.html" class="font-bold text-center md:text-2xl flex flex-col md:flex-row justify-center items-center md:gap-5">
+                                                            <figure class="mx-auto"><img src="assets/logo.png" alt="logo"></figure>
+                                                             <span>Donate Bangladesh</span>
+                                                </a>
+                                                <div class="flex flex-col md:flex-row justify-center items-center md:gap-4">
+                                                            <img src="assets/coin.png" alt="coin">
+                                                            <span class="font-semibold md:text-xl"  id="main-balance">10000</span>
+                                                            <span class="font-semibold">BDT</span>
+                                                </div>
+                                    </div>
+                                    <div class="flex justify-center items-center gap-5 mt-6">
+                                                <button class="btn bg-primarycolor px-7" id="donate-btn">Donate</button>
+                                                <button class="btn bg-white border text-black px-7" id="history-btn">History</button>
+                                    </div>
+                        </nav>
+            </header>
+            <main class="container mx-auto px-5 md:px-0 pt-44 pb-20">
+                        <div class="flex flex-col gap-7">
+                                    <!-- faq 1 -->
+                                    <div class="collapse collapse-arrow bg-base-200">
+                                                <input type="radio" name="my-accordion-2" checked="checked" />
+                                                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                                                <div class="collapse-content">
+                                                            <p>
+                                                                        The Document Object Model (DOM) is a programming interface for HTML document. 
+                                                                        It represents HTML document as a tree, where every node is an element, attribute or content. 
+                                                                        DOM can dynamically modify HTML document's element, content, styling, etc.
+                                                            
+                                                            </p>
+                                                </div>
+                                    </div>
+                                    <!-- faq 2 -->
+                                    <div class="collapse collapse-arrow bg-base-200">
+                                                <input type="radio" name="my-accordion-2" />
+                                                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                                                <div class="collapse-content">
+                                                            <p>
+                                                                        There are 5 way to select an HTML element from the DOM. <br>
+                                                                        1. document.getElementByID() <br>
+                                                                        2. document.getElementsByClassName() <br>
+                                                                        3. document.getElementByTagName() <br>
+                                                                        4. document.querySelector() <br>
+                                                                        5. document.querySelectorAll()
+                                                            </p>
+                                                </div>
+                                    </div>
+                                    <!-- faq 3 -->
+                                    <div class="collapse collapse-arrow bg-base-200">
+                                                <input type="radio" name="my-accordion-2" />
+                                                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                                                <div class="collapse-content">
+                                                            <p>
+                                                                        Event delegation is refer to the process of using event bubbling. It is useful because it reduce large number 
+                                                                        of event listener.
+                                                            </p>
+                                                </div>
+                                    </div>
+                                    <!-- faq 4 -->
+                                    <div class="collapse collapse-arrow bg-base-200">
+                                                <input type="radio" name="my-accordion-2" />
+                                                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                                                <div class="collapse-content">
+                                                            <p>
+                                                                        Manipulate an element's attributes and styles in the DOM using JavaScript is <br>
+                                                                        1. setAttribute() <br>
+                                                                        2. removeAttribute() <br>
+                                                                        3. style.property = value <br>  
+                                                                        4. classList.add() <br> 
+                                                                        5. classList.remove() <br>
+                                                            </p>
+                                                </div>
+                                    </div>
+                        </div>
+            </main>
+            <footer class="bg-[#F9F7F3] mt-20">
+                        <div class="container mx-auto px-5 md:px-0 py-12">
+                                    <p class="text-center text-xl">&copy; all rights reserved 2024 by MD Saifur Rahman</p>
+                        </div>
+            </footer>
+</body>
+
+</html>
