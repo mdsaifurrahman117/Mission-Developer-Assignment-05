@@ -49,11 +49,11 @@
                                     </div>
                                     <div class="flex justify-center items-center gap-5 mt-6">
                                                 <button class="btn bg-primarycolor" id="donate-btn">Donate</button>
-                                                <button class="btn bg-white border text-gray-500 active:bg-primarycolor active:text-black" id="history-btn">History</button>
+                                                <button class="btn bg-white border text-black" id="history-btn">History</button>
                                     </div>
                         </nav>
             </header>
-            <main class="container mx-auto px-5 md:px-0 pt-44 pb-20">
+            <main class="container mx-auto px-5 md:px-0 pt-44 pb-20" id="main">
                         <div class="flex flex-col justify-center items-center gap-10">
                                     <!-- card 1 -->
                                     <div class="card bg-base-100 md:w-4/5 mx-auto shadow-md flex md:flex-row">
@@ -87,7 +87,7 @@
                                                 <div class="card-body md:w-[522px]">
                                                             <div class="flex items-center gap-2">
                                                                         <img src="assets/coin.png" alt="coin">
-                                                                        <span class="font-semibold"  id="noakhali-donated-amount">1000</span>
+                                                                        <span class="font-semibold"  id="feni-donated-amount">1000</span>
                                                                         <span class="font-semibold">BDT</span>
                                                             </div>
                                                             <h2 class="card-title text-xl">Donate for Flood Relief in Feni,Bangladesh</h2>
@@ -112,7 +112,7 @@
                                                 <div class="card-body md:w-[522px]">
                                                             <div class="flex items-center gap-2">
                                                                         <img src="assets/coin.png" alt="coin">
-                                                                        <span class="font-semibold"  id="noakhali-donated-amount">1000</span>
+                                                                        <span class="font-semibold"  id="quota-donated-amount">1000</span>
                                                                         <span class="font-semibold">BDT</span>
                                                             </div>
                                                             <h2 class="card-title text-xl">Aid for Injured in the Quota Movement</h2>
@@ -132,6 +132,14 @@
                                     </div>
                         </div>
             </main>
+            <section class="container mx-auto px-5 md:px-0 pt-44 pb-20 hidden" id="history">
+                        <div class="card bg-base-100 w-3/4 mx-auto shadow-md">
+                                    <div class="card-body">
+                                                <h2 class="card-title">Card title!</h2>
+                                                <p>If a dog chews shoes whose shoes does he choose?</p>
+                                    </div>
+                        </div>
+            </section>
 <!-- script -->
 <script src="script.js"></script>
 </body>
