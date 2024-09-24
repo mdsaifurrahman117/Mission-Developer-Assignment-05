@@ -1,3 +1,6 @@
+// main balance
+let balance = document.getElementById("main-balance").innerText;
+
 // hide main section
 document.getElementById("history-btn").addEventListener("click", function () {
             document.getElementById("main").classList.add("hidden");
@@ -5,6 +8,7 @@ document.getElementById("history-btn").addEventListener("click", function () {
             document.getElementById("history-btn").style.backgroundColor = "#B4F461";
             document.getElementById("donate-btn").style.backgroundColor = "white";
 });
+
 // hide history section 
 document.getElementById("donate-btn").addEventListener("click", function () {
             document.getElementById("main").classList.remove("hidden");
@@ -13,11 +17,7 @@ document.getElementById("donate-btn").addEventListener("click", function () {
             document.getElementById("donate-btn").style.backgroundColor = "#B4F461";
 })
 
-// main balance
-let balance = document.getElementById("main-balance").innerText;
-console.log(balance);
-
-// donate noakhali
+// donate for noakhali
 document.getElementById("donate-noakhali-btn").addEventListener("click", function () {
             // donation input
             let noakhaliAmount = document.getElementById("noakhali-amount").value;
@@ -47,6 +47,14 @@ document.getElementById("donate-noakhali-btn").addEventListener("click", functio
                         // set the current balance amount
                         document.getElementById("noakhali-donated-amount").innerText =
                         newAmount;
+
+                        // add to history
+                        let history = document.createElement("h1");
+                        history.innerHTML = `
+                                    ${noakhaliDonation} Donate for Flood at Noakhali, Bangladesh
+                        ` ;
+                        document.getElementById("history-container").appendChild(history);
+
                         alert("donation successful");
                         }
             } else {
@@ -54,7 +62,7 @@ document.getElementById("donate-noakhali-btn").addEventListener("click", functio
             }
 });
 
-// donate feni 
+// donate for feni 
 document.getElementById("donate-feni-btn").addEventListener("click", function () {
             // donation input
             let feniAmount = document.getElementById("feni-amount").value;
@@ -84,6 +92,14 @@ document.getElementById("donate-feni-btn").addEventListener("click", function ()
                         // set the current balance amount
                         document.getElementById("feni-donated-amount").innerText =
                         newAmount;
+
+                        // add to history
+                        let history = document.createElement("h1");
+                        history.innerHTML = `
+                                    ${feniDonation} Donate for Flood Relief in Feni,Bangladesh
+                         ` ;
+                        document.getElementById("history-container").appendChild(history);
+
                         alert("donation successful");
                         }
             } else {
@@ -91,7 +107,7 @@ document.getElementById("donate-feni-btn").addEventListener("click", function ()
             }
 });
 
-// donate quota
+// donate for quota
 document.getElementById("donate-quota-btn").addEventListener("click", function () {
             // donation input
             let quotaAmount = document.getElementById("quota-amount").value;
@@ -121,6 +137,14 @@ document.getElementById("donate-quota-btn").addEventListener("click", function (
                         // set the current balance amount
                         document.getElementById("quota-donated-amount").innerText =
                         newAmount;
+
+                        // add to history
+                        let history = document.createElement("h1");
+                        history.innerHTML = `
+                                    ${quotaDonation} Aid for Injured in the Quota Movement
+                         ` ;
+                        document.getElementById("history-container").appendChild(history);
+
                         alert("donation successful");
                         }
             } else {
